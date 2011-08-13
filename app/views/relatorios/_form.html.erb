@@ -1,0 +1,37 @@
+<%= form_for(@relatorio) do |f| %>
+  <% if @relatorio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@relatorio.errors.count, "error") %> prohibited this relatorio from being saved:</h2>
+
+      <ul>
+      <% @relatorio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mes, "Mês" %><br />
+    <%= f.date_select :mes, :discard_day => true, :discard_year => true %>
+  </div>
+  <div class="field">
+    <%= f.label :ano %><br />
+    <%= f.date_select :ano, :discard_day => true, :discard_month => true %>
+  </div>
+  <div class="field">
+    <%= f.label :saldo_mes_anterior, "Saldo do Mês Anterior" %><br />
+    <%= f.text_field :saldo_mes_anterior %>
+  </div>
+  <div class="field">
+    <%= f.label :dizimos, "Dízimos" %><br />
+    <%= f.text_field :dizimos %>
+  </div>
+  <div class="field">
+    <%= f.label :ofertas %><br />
+    <%= f.text_field :ofertas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

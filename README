@@ -1,0 +1,9 @@
+Um programa para auxiliar na exibição das contas da Cong. Presbiteriana do Alto do Mateus.
+Desenvolvida em Ruby on Rails
+
+Gems utilizadas:
+'rails', '3.0.9'
+'sqlite3'
+'rails-i18n'
+'nifty-generators'
+'jquery-rails'

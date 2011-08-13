@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @conta.nome %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @conta.valor %>
+</p>
+
+<p>
+  <b>Relatorio:</b>
+  <%= @conta.relatorio.mes.strftime("%B") %>
+</p>
+
+
+<%= link_to 'Editar', edit_conta_path(@conta) %> |
+<%= link_to 'Voltar', contas_path %>

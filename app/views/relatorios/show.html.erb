@@ -1,0 +1,40 @@
+<h2>Relatório Financeiro</h2>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mês:</b> <%= @relatorio.mes.strftime("%B") %> | <b>Ano:</b> <%= @relatorio.ano.strftime("%Y") %>
+</p>
+
+<p>
+  <b>Saldo do Mês Anterior:</b>
+  <%= valor_formatado(@relatorio.saldo_mes_anterior) %>
+</p>
+
+<p>
+  <b>Dízimos:</b> <%= valor_formatado(@relatorio.dizimos) %> | <b>Ofertas:</b> <%= valor_formatado(@relatorio.ofertas) %>
+</p>
+
+<% entradas = @relatorio.saldo_mes_anterior + @relatorio.dizimos + @relatorio.ofertas -%>
+<p><b>Total de Entradas:</b> <%= valor_formatado(entradas) %></p>
+
+<hr />
+
+<h3>Contas do mês de <%= @relatorio.mes.strftime("%B") %></h3>
+<% saida = 0.0 -%>
+<% @relatorio.contas.each do |conta|-%>
+  <% saida += conta.valor -%>
+  <p>
+    <b>Conta:</b> <%= conta.nome %> | <b>Valor:</b> <%= valor_formatado(conta.valor) %>
+  </p>
+<% end -%>
+
+<p><b>Total de Saídas:</b> <%= valor_formatado(saida) %></p>
+
+<hr />
+
+<p><b>Saldo para o próximo mês:</b> <%= valor_formatado(entradas - saida) %></p>
+
+<% if logged_in? -%>
+  <%= link_to 'Editar', edit_relatorio_path(@relatorio) %> |
+<% end -%>
+<%= link_to 'Voltar', relatorios_path %>

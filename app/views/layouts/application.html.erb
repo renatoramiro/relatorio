@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) : "Relatório Financeiro - Alto do Mateus" %></title>
+    <%= stylesheet_link_tag "style" %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+	<div id="header">
+		<h1><a href="" >Relatório Financeiro</a> - Alto do Mateus</h1>
+		<p>
+      <% if logged_in? %>
+        Seja bem vindo <%= current_user.username.capitalize %>! Não é você?
+        <%= link_to "Sair", logout_path, :html_options => {:class => 'right'} %> | 
+        <%= link_to 'Editar Conta', :edit_current_user %>
+      <% else %>
+        <%= link_to "Entrar", login_path, :html_options => {:class => 'right'} %>
+      <% end %>
+    </p>
+	</div>
+	<div id="menu">
+    <ul>
+      <li><%= link_to 'Relatórios', relatorios_path %></li>
+      <li><%= link_to 'Sobre', {:controller => :about} %></li>
+      <% if logged_in? -%>
+        <li><%= link_to 'Contas', contas_url %></li>
+      <% end -%>
+    </ul>
+  </div>
+
+	<div id="container">
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+    <%= content_tag :h1, yield(:title) if show_title? %>
+		<%= yield %>
+
+    <script type='text/javascript'>
+      <%= yield :js %>
+    </script>
+	</div>
+	<div id="footer">
+		<p>Copyright &copy; <%= Time.now.year %> | Desenvolvido por <%= link_to 'Renato Ramiro', 'https://sites.google.com/site/renatoramiro84/'%></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+body{
+	margin: 0;
+	background-color: #363942;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 93%;
+}
+
+#header {
+	color: gray;
+	padding: 2px;
+	margin: 3px 250px 0px 250px;
+}
+#header h1 {
+	font-size: 30px;
+	font-family: "cursive", Arial;
+}
+#header a {
+	text-decoration: none;
+	color: gray;
+}
+
+#header a:hover {
+	text-decoration: underline;
+	color: gray;
+}	
+
+.right {
+	margin-left: 500px;
+}
+
+#header p {
+	font-family: "cursive", Arial;
+	font-size: 15px;
+	color: gray;
+}
+
+#menu {
+	margin: 3px 250px 0px 250px;
+	padding-bottom: 17px;
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	float: left;
+	width: 100%;
+	background-color:#EDEDED;
+	list-style:none;
+	font:80% Tahoma;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+	padding: 2px 10px;
+	float:left;
+}
+
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #363942;
+}
+
+#container {
+	margin: 3px 250px 0px 250px;
+	background-color: #D8CAA8;
+	padding: 2px 5px 2px 5px;
+	border-color: gray;
+	border-style: groove;
+	border-width: 1px;
+	font-family: "Arnoldboecklin"
+}
+
+#footer {
+	margin: 3px 250px 0px 250px;
+	padding: 2px 5px 2px 5px;
+	color: gray;
+	font-family: "Andale Mono"
+}
+#footer p {
+	text-align: center;
+}
+
+table {
+	font-family: "Courier New";
+}
+
+thead {
+	background-color: #000;
+	color: #fff;
+}
+th {
+	background-color: gray;
+	color:white;
+}
+td {
+	padding: 5px;
+}
+
+#container a:link {color: #333; text-decoration: none;}
+#container a:visited {color: #333; text-decoration: none;}
+#container a:active {color: #333; text-decoration: none;}
+#container a:hover {background-color: gray; color: #000; text-decoration: none;}
+	
+#footer a:link {color: gray; text-decoration: none;}
+#footer a:visited {color: gray; text-decoration: none;}
+#footer a:active {color: gray; text-decoration: none;}
+#footer a:hover {background-color: #000; color: gray; text-decoration: none;}
+	
+#container h1{
+	font-family: times;
+	font-size: 25px;
+}
+#container h2{
+	font-family: times;
+	font-size: 20px;
+}
+	
+#container h3{
+	font-family: times;
+	font-size: 18px;
+}
+	
+.formulario {
+	margin: 3px 350px 3px 0px;
+	border-color: gray;
+	border-style: groove;
+	border-width: 1px;
+		
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+	
+.formulario form {
+	padding: 5px;
+}
+
+.formulario input {
+	margin-bottom: 10px;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}

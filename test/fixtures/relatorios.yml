@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  mes: 2011-08-08
+  ano: 2011-08-08
+  saldo_mes_anterior: 1.5
+  dizimos: 1.5
+  ofertas: 1.5
+
+two:
+  mes: 2011-08-08
+  ano: 2011-08-08
+  saldo_mes_anterior: 1.5
+  dizimos: 1.5
+  ofertas: 1.5

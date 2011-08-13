@@ -1,0 +1,24 @@
+<h1>Lista de Contas</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Valor</th>
+    <th>Relatório</th>
+  </tr>
+
+<% @contas.each do |conta| %>
+  <tr>
+    <td><%= conta.nome %></td>
+    <td><%= conta.valor %></td>
+    <td><%= conta.relatorio.mes.strftime("%B") %></td>
+    <td><%= link_to 'Exibir', conta %></td>
+    <td><%= link_to 'Editar', edit_conta_path(conta) %></td>
+    <td><%= link_to 'Apagar', conta, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Criar Conta', new_conta_path %>

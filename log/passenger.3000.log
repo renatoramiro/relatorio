@@ -1,0 +1,176 @@
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+[ pid=2869 thr=81546720 file=utils.rb:176 time=2011-08-10 11:19:14.574 ]: *** Exception SyntaxError in PhusionPassenger::Rack::ApplicationSpawner (/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: invalid multibyte char (US-ASCII)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: invalid multibyte char (US-ASCII)) (process 2869, thread #<Thread:0x9b89bc0>):
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `eval'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `load_rack_app'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+[ pid=3107 thr=80635360 file=utils.rb:176 time=2011-08-10 11:32:14.699 ]: *** Exception PhusionPassenger::UnknownError in PhusionPassenger::Rack::ApplicationSpawner (Bundler could not find compatible versions for gem "i18n":
+  In snapshot (Gemfile.lock):
+    i18n (0.5.0)
+
+  In Gemfile:
+    rails-i18n depends on
+      i18n (~> 0.6)
+
+Running `bundle update` will rebuild your snapshot from scratch, using only
+the gems in your Gemfile, which may resolve the conflict.
+ (Bundler::VersionConflict)) (process 3107, thread #<Thread:0x99ccbc0>):
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/resolver.rb:129:in `block in resolve'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/resolver.rb:127:in `catch'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/resolver.rb:127:in `resolve'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/definition.rb:151:in `resolve'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/definition.rb:90:in `specs'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/definition.rb:135:in `specs_for'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/definition.rb:124:in `requested_specs'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/environment.rb:23:in `requested_specs'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler/runtime.rb:11:in `setup'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/bundler-1.0.15/lib/bundler.rb:107:in `setup'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:326:in `prepare_app_process'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:155:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+[ pid=3487 thr=79021180 file=utils.rb:176 time=2011-08-10 11:39:24.363 ]: *** Exception NameError in PhusionPassenger::Rack::ApplicationSpawner (uninitialized constant RelatorioFinanceiro::Application::BR) (process 3487, thread #<Thread:0x96b88f8>):
+	from /home/renato/Rails Projects/relatorio_financeiro/config/application.rb:31:in `<class:Application>'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/application.rb:10:in `<module:RelatorioFinanceiro>'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/application.rb:9:in `<top (required)>'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:2:in `require'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:2:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `eval'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `load_rack_app'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+[ pid=3712 thr=69344380 file=utils.rb:176 time=2011-08-10 11:46:00.988 ]: *** Exception NameError in PhusionPassenger::Rack::ApplicationSpawner (uninitialized constant RelatorioFinanceiro::Application::BR) (process 3712, thread #<Thread:0x84438f8>):
+	from /home/renato/Rails Projects/relatorio_financeiro/config/application.rb:31:in `<class:Application>'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/application.rb:10:in `<module:RelatorioFinanceiro>'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/application.rb:9:in `<top (required)>'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:2:in `require'
+	from /home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:2:in `<top (required)>'
+	from config.ru:3:in `require'
+	from config.ru:3:in `block in <main>'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/local/ruby/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `eval'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:222:in `load_rack_app'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/utils.rb:572:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES
+Cannot execute '/var/lib/passenger-standalone/3.0.7-x86-ruby1.9.2-linux-gcc4.5.2-1002/support/helper-scripts/prespawn http://0.0.0.0:3000': Permission denied (13)
+/home/renato/Rails Projects/relatorio_financeiro/config/environment.rb:8: warning: already initialized constant MONTHNAMES

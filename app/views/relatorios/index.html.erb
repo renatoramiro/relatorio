@@ -1,0 +1,31 @@
+<h2>Lista de Relatórios</h2>
+
+<table>
+  <tr>
+    <th>Mês</th>
+    <th>Ano</th>
+    <th>Saldo do Mês Anterior</th>
+    <th>Dizimos</th>
+    <th>Ofertas</th>
+  </tr>
+
+<% @relatorios.each do |relatorio| %>
+  <tr>
+    <td><%= relatorio.mes.strftime("%B") %></td>
+    <td><%= relatorio.ano.strftime("%Y") %></td>
+    <td><%= valor_formatado(relatorio.saldo_mes_anterior) %></td>
+    <td><%= valor_formatado(relatorio.dizimos) %></td>
+    <td><%= valor_formatado(relatorio.ofertas) %></td>
+    <td><%= link_to 'Mostrar', relatorio %></td>
+    <% if logged_in? -%>
+      <td><%= link_to 'Editar', edit_relatorio_path(relatorio) %></td>
+      <td><%= link_to 'Apagar', relatorio, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end -%>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% if logged_in? -%>
+  <%= link_to 'Criar Relatório', new_relatorio_path %>
+<% end -%>
